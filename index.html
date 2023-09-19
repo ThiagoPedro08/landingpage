@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Perudev - Inicio</title>
+</head>
+<body>
+
+<content class="container">
+    <header id="header">
+        <nav id="nav">
+            <a id="logo" href="index.html">PERUDEV</a>
+            <ul id="menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Mídia</a></li>
+                <li><a href="#">Portifólio</a></li>
+            </ul> 
+            <img id="btn" style="max-width: 30px;" src="icones/barra-de-menu.png" alt="menu">      
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="img-section"><img src="IMG/Design sem nome(1).png" alt="imagem"></div>
+    </section>
+
+    <main class="main">
+        <div class="main-1">
+            <h1>BEM-VINDO AO <br>
+            MEU SITE</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolor corrupti delectus? Veritatis esse necessitatibus magnam omnis. Optio laudantium vitae doloremque minima, voluptates excepturi sequi, sunt vero vel officiis ratione. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint fugit voluptate blanditiis error cupiditate possimus dolores doloribus autem assumenda nemo asperiores, minus eius corporis ullam, dolorum facilis. Ipsa, sint officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius animi iste unde eum omnis hic similique praesentium cumque, enim quisquam ea soluta? Quibusdam necessitatibus vero voluptatum hic repellat architecto id!</p>
+
+            <button class="btn"><a href="#">Saiba Mais</a></button>
+        </div>
+        <div class="main-2">
+            <img src="IMG/student-849825_640.jpg" alt="">
+        </div>
+    </main>
+
+    <article class="article">
+        <div class="card-1">
+            <img src="IMG/PROGRAMACAO-1.jpg" alt="códigos">
+            <h2>CRIAÇÃO DE SITES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id eligendi aliquid eum accusamus magnam consequuntur asperiores autem quis laudantium quasi aspernatur, sequi ut, voluptatem libero reprehenderit facilis, ipsam debitis.</p>
+            <button class="btn"><a href="#">Saiba Mais</a></button>
+        </div>
+        <div class="card-2">
+            <img src="IMG/hospedagem.jpg" alt="hospedagem">
+            <h2>HOSPEDAGEM DE SITES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis quae natus impedit aliquam sit aliquid tempora quidem nulla doloremque fuga eligendi odio perferendis ab, debitis consequuntur quibusdam dolorum numquam.</p>
+            <button class="btn"><a href="#">Saiba Mais</a></button>
+        </div>
+        <div class="card-3">
+            <img src="IMG/manutencao.jpg" alt="manutencao">
+            <h2>MANUTENÇÃO DE SITES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos nobis porro mollitia cumque est inventore neque sint dolorum hic ex, earum perspiciatis labore asperiores enim ullam, odio exercitationem reiciendis.</p>
+            <button class="btn"><a href="#">Saiba Mais</a></button>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <img src="icones/github.png" alt="github">
+        <img src="icones/linkedin.png" alt="linkedin">
+        <img src="icones/facebook(1).png" alt="facebook">
+        <img src="icones/instagram.png" alt="instagram">
+        <img src="icones/twitter.png" alt="twitter">
+        <img src="icones/tiktok.png" alt="tiktok">
+        <br><br>
+        <p>Desenvolvido por: &copy; perudev 2023</p>
+    </footer>
+
+    <a  href="https://api.whatsapp.com/send?phone=5518997052969&text=Ol%C3%A1!%20Peguei%20seu%20contato%20no%20site." target="_blank" class="whats"><img src="icones/whatsapp.png" ></a>
+
+</content>
+
+    <script>
+        const btn = document.getElementById('btn');
+
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btn.addEventListener('click', toggleMenu);
+    </script>
+
+</body>
+</html>

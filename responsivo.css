@@ -1,0 +1,326 @@
+@media (min-width: 2000px){
+.section img{
+    width: 200%;
+    }
+    
+    .main p{
+        font-size: 30px;
+    }
+
+    .card-1 p, .card-2 p, .card-3 p{
+        font-size: 20px;
+    }
+
+    .card-1 a, .card-2 a, .card-3 a{
+        font-size: 20px;
+    }
+}
+/* --------------------------------------- */
+
+@media (max-width: 1600px){
+    .btn{
+        padding: 15px 20px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        grid-template-areas:  
+        "header header"
+        "section section"
+        "main main"
+        "article article"
+        "footer footer";
+    }
+
+    #header{
+        grid-area: header;
+    }
+
+    .section{
+        grid-area: section;
+    }
+
+    .main{
+        grid-area: main;
+        align-items: center;
+    } 
+
+    .article{
+        grid-area: article;
+        padding: 0 40px;
+        gap: 50px;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 1114px){
+    .btn{
+        margin-bottom: 30px;
+        box-shadow: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        grid-template-areas:  
+        "header"
+        "section"
+        "main"
+        "article"
+        "footer";
+    }
+
+    #header{
+        grid-area: header;
+    }
+
+    .section{
+        grid-area: section;
+    }
+
+    .main{
+        grid-area: main;
+        display: block;
+        text-align: center;
+    }
+
+    .main p{
+        text-align: justify;
+    }
+
+    .article{
+        grid-area: article;
+    }
+
+    .card-1, .card-2, .card-3{
+        box-shadow: none;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}
+
+/* ----------------------------------------- */
+
+@media (max-width: 1000px){
+    #menu a{
+        font-size: 20px;
+    }
+
+    .btn{
+        padding: 15px 20px;
+        margin: 20px 0;
+        box-shadow: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        grid-template-areas:  
+        "header"
+        "section"
+        "main"
+        "article"
+        "footer";
+    }
+
+    #header{
+        grid-area: header;
+    }
+
+    .section{
+        grid-area: section;
+    }
+
+    .section img{
+        max-width: 100%;
+    }
+
+    .main{
+        grid-area: main;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .main-1{
+        margin: 0 20px;
+    }
+
+    .main-1 p{
+        text-align: justify;
+    }
+    
+    .main-2{
+        margin-right: 0; 
+        align-items: center;
+    }
+    
+    .main-2 img{
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .article{
+        grid-area: article;
+        display: flex;
+        gap: 20px;
+    }
+
+    .card-1, .card-2, .card-3{
+        box-shadow: none;
+    }
+
+    .footer{
+        grid-area: footer;
+        display: block;
+    }
+
+    .whats{
+        bottom: 30px;
+        right: 20px;
+    }
+}
+
+/* ------------------------------------------------- */
+
+@media (max-width: 600px){
+    #nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 30%;
+        top: 66px;
+        right: 0px;
+        background:rgba(0, 190, 246, 06);
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: hidden;
+        visibility: hidden;
+    }
+
+    #btn{
+        display: flex;
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu li{
+        padding: 1rem 0;
+        margin: 0.2rem;
+        border-bottom: 2px solid white;
+        align-items: center;
+    }
+
+    #menu a{
+        color:black;
+        font-size: 20px;
+    }
+
+    #menu a:hover{
+        border-bottom: none;
+    }
+
+    .btn{
+        padding: 15px 20px;
+        margin: 20px 0;
+        box-shadow: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        grid-template-areas:  
+        "header"
+        "section"
+        "main"
+        "article"
+        "footer";
+    }
+
+    #header{
+        grid-area: header;
+    }
+
+    .section{
+        grid-area: section;
+    }
+
+    .section img{
+        max-width: 100%;
+    }
+
+    .main{
+        grid-area: main;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .main-1{
+        margin: 0 20px;
+    }
+
+    .main-1 p{
+        text-align: justify;
+    }
+    
+    .main-2{
+        margin-right: 0; 
+        align-items: center;
+    }
+    
+    .main-2 img{
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .article{
+        grid-area: article;
+        display: block;
+    }
+
+    .card-1, .card-2, .card-3{
+        box-shadow: none;
+    }
+
+    .footer{
+        grid-area: footer;
+        display: block;
+    }
+
+    .footer img{
+        max-width: 24px;
+    }
+
+    .footer img + img{
+        margin-left: 10px;
+    }
+
+    .whats{
+        bottom: 10px;
+        right: 18px;
+    }
+}
+    
+
+    
